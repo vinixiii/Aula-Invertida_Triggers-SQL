@@ -6,5 +6,5 @@ CREATE TABLE Mercadorias
 	PrecoComDesc	DECIMAL(10, 2)
 );
 
---DROP TABLE Mercadorias;
---DROP TRIGGER trg_AplicaDesconto
+DROP TABLE Mercadorias;
+DROP TRIGGER trg_AplicaDesconto

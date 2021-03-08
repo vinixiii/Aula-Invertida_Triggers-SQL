@@ -7,7 +7,7 @@ PRINT 'Produto inserido com sucesso!'; -- Código do trigger
 
 
 
-
+DELETE FROM Produtos;
 
 
 
@@ -17,4 +17,4 @@ INSERT INTO Produtos (Nome, Preco)
 VALUES ('Refrigerante', 7.50);
 
 -- EXIBIR DADOS DA TABELA PRODUTOS
-SELECT * FROM Produtos;
+SELECT Nome AS Produto, FORMAT(Preco, 'c', 'pt-br') AS [Preço] FROM Produtos;

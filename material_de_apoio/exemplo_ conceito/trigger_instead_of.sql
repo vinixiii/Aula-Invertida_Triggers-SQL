@@ -18,6 +18,12 @@ DROP TRIGGER trg_mensagem_instead_of;
 
 
 
+CREATE TABLE Produtos
+(
+	IdProduto		INT PRIMARY KEY IDENTITY,
+	Nome			VARCHAR(100),
+	Preco			DECIMAL(10, 2)
+);
 
 
 
@@ -26,4 +32,4 @@ INSERT INTO Produtos (Nome, Preco)
 VALUES ('Bolacha', 2.50);
 
 -- EXIBIR DADOS DA TABELA PRODUTOS
-SELECT * FROM Produtos;
+SELECT Nome AS Produto, FORMAT(Preco, 'c', 'pt-br') AS [Preço] FROM Produtos;
